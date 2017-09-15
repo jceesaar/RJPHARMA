@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/08/2017, 21:02:43
+    Author     : Fabio Gomes Rocha
+    Disciplina : Programação Web II
+*/
+body{
+    background-color: #eee;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+    max-width: 900px;
+    border: solid;
+    border-color: gray;
+}
+header{
+    background-color: green;
+    display:block;
+    color:#ffffff;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    
+}
+header h2{
+    margin: 0px;
+}
+h1{
+    font-size: 72px;
+    margin:0px;
+}
+h2{
+    font-size: 24px;
+    margin: 0px;
+    text-align: center;
+    color:orange
+}
+h3{
+    font-size: 18px;
+    margin:0px;
+    text-align: center;
+    color:black;
+}
+p{
+    color: #f47D31;
+    background-color: #ffffff;
+    position:absolute;
+    padding: 32px 32px;
+    top: 10px;
+    left: 20px;
+    font-size: 11px;
+}
+nav{
+    display: block;
+    width:25%;
+    float:left;
+}
+nav a:link, nav a:visited{
+    display: block;
+    border-bottom: 3px solid #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+nav a:hover{
+    color: white;
+    background-color: darkblue;
+}
+nav h3{
+    margin:15px;
+    color: white;
+}
+#container{
+    background-color: #888;
+}
+section{
+    display: block;
+    width: 50%;
+    float: left;
+}
+article{
+    background-color: #eee;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 20px #888;
+    -webkit-transform: rotate;
+    -moz-box-shadow: 2px 2px 20px #888;
+    -moz-transform: rotate;
+}
+article header{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding:5px;
+}
+article footer{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding:5px;
+}
+article h1{
+    font-size: 18px;
+}
+aside{
+    display:block;
+    width:25%;
+    float: left;
+}
+aside h3{
+    margin: 15px;
+    color: white;
+}
+aside p{
+    margin:15px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    
+}
+footer{
+    clear: both;
+    display: block;
+    background-color: darkblue;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;   
+}
+footer h2{
+    font-size: 14px;
+    color:white;
+}
+a{
+    color:darkblue;
+}
+a:hover{
+    text-decoration: underline;
+}

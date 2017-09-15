@@ -1,0 +1,16 @@
+CREATE TABLE logins (
+login VARCHAR(30) NOT NULL,
+senha VARCHAR(30) NOT NULL,
+tipo INT NOT NULL
+);
+
+
+CREATE TABLE medicamento (
+ms VARCHAR(12) PRIMARY KEY,
+nome VARCHAR(50) NOT NULL,
+valor VARCHAR(10) NOT NULL,
+descr VARCHAR(255)
+);
+
+INSERT INTO logins (login, senha, tipo) VALUES ('admin','rjp123',1);
+INSERT INTO logins (login, senha, tipo) VALUES ('user1','123',1);
