@@ -19,16 +19,16 @@
                 String sqllogin = "select * from logins where login='"+ request.getParameter("login") +"' and senha='" + request.getParameter("senha") +"'";
                 
                 ResultSet res = stm.executeQuery(sqllogin);
-                if (res.next() && login.equals("admin")) {
-                    out.println("LOGIN É ADMIN!");
-                    session.setAttribute("lgn", login);
-                    session.setAttribute("login", "1");
-                    response.sendRedirect("index.jsp");
-                } else if(res.next()) {
-                    out.println("LOGIN NÃO É ADMIN!");
+                if (res.next()) {
+                    if (login.equals("admin")){
                     session.setAttribute("lgn", login);
                     session.setAttribute("login", "2");
                     response.sendRedirect("index.jsp");
+                    } else {
+                    session.setAttribute("lgn", login);
+                    session.setAttribute("login", "1");
+                    response.sendRedirect("index.jsp");    
+                    }
                 } else {
                     out.println("Login e Senha incorreta");
                     response.sendRedirect("login.jsp?msg=Senha Incorreta!");

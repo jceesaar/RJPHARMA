@@ -12,11 +12,11 @@
     <body>
         
         <!--VALIDANDO LOGIN;-->
-        <%if(session.getAttribute("login")=="1"){%>
+        <%if(session.getAttribute("login")=="2"){%>
         <table>
             <tr><td>&nbsp;<i>Logado como (ADMINISTRADOR):</i> <b><%=session.getAttribute("lgn")%></b> </td><td> <a href="logout.jsp"><input type="button" value="Sair" /></a></td> <td> <a href="logins"><input type="button" value="ADMINS" /></a></td></tr>
         </table>
-        <%} else if(session.getAttribute("login")=="2") {%>
+        <%} else if(session.getAttribute("login")=="1") {%>
         <table>
             <tr><td>&nbsp;<i>Logado como (USUARIO)</i> <b><%=session.getAttribute("lgn")%></b> </td><td> <a href="logout.jsp"><input type="button" value="Sair" /></a></td></tr>
         </table>

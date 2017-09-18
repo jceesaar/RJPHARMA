@@ -72,7 +72,7 @@ public class LoginServlet extends HttpServlet {
 		admin.setLogin("admin");
 		admin.setSenha("rjp123");
                 admin.setTipo("2");
-                usuario.setLogin("user1");
+                usuario.setLogin("user");
 		usuario.setSenha("123");
                 usuario.setTipo("1");
 		login.add(admin);

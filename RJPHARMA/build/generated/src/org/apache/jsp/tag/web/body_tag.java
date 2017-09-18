@@ -100,13 +100,13 @@ public final class body_tag
       out.write("        <p>\n");
       out.write("        Versão 1.0<br />\n");
       out.write("        Última Atualização: 15/09/2017<br />\n");
-      out.write("        Detalhe da Atualização: Static WebService.<br />\n");
+      out.write("        Detalhe da Atualização:<BR />\n");
+      out.write("        DB Login System + Privilegy System.<br />\n");
       out.write("        <br />\n");
       out.write("        Próximo Patch:<br />\n");
-      out.write("        - <i>Static WebService</i> <b>(98%)</b><br />\n");
+      out.write("        - <i>Static WebService</i> <b>(90%)</b><br />\n");
       out.write("        - <i>DB WebService</i> <b>(0%)</b><br />\n");
-      out.write("        - <i>Sistema de consumo do WebService</i> <b>(0%)</b><br />\n");
-      out.write("        - <i>Login System BD</i> <b>(0%)</b><br />          \n");
+      out.write("        - <i>Sistema de consumo do WebService</i> <b>(0%)</b><br />        \n");
       out.write("        </p>\n");
       out.write("</header>");
     } catch( Throwable t ) {

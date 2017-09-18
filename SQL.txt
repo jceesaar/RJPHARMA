@@ -12,5 +12,5 @@ valor VARCHAR(10) NOT NULL,
 descr VARCHAR(255)
 );
 
-INSERT INTO logins (login, senha, tipo) VALUES ('admin','rjp123',1);
-INSERT INTO logins (login, senha, tipo) VALUES ('user1','123',1);
+INSERT INTO logins (login, senha, tipo) VALUES ('admin','rjp123',2);
+INSERT INTO logins (login, senha, tipo) VALUES ('user','123',1);

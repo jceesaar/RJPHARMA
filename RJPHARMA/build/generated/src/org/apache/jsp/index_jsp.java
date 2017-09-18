@@ -79,15 +79,23 @@ Statement stm = con.createStatement();
       out.write("        \n");
       out.write("        <!--VALIDANDO LOGIN;-->\n");
       out.write("        ");
-if(session.getAttribute("login")!=null){
+if(session.getAttribute("login")=="2"){
       out.write("\n");
       out.write("        <table>\n");
-      out.write("            <tr><td>&nbsp;<i>Logado como:</i> <b>");
+      out.write("            <tr><td>&nbsp;<i>Logado como (ADMINISTRADOR):</i> <b>");
+      out.print(session.getAttribute("lgn"));
+      out.write("</b> </td><td> <a href=\"logout.jsp\"><input type=\"button\" value=\"Sair\" /></a></td> <td> <a href=\"logins\"><input type=\"button\" value=\"ADMINS\" /></a></td></tr>\n");
+      out.write("        </table>\n");
+      out.write("        ");
+} else if(session.getAttribute("login")=="1") {
+      out.write("\n");
+      out.write("        <table>\n");
+      out.write("            <tr><td>&nbsp;<i>Logado como (USUARIO)</i> <b>");
       out.print(session.getAttribute("lgn"));
       out.write("</b> </td><td> <a href=\"logout.jsp\"><input type=\"button\" value=\"Sair\" /></a></td></tr>\n");
       out.write("        </table>\n");
       out.write("        ");
-} else{
+} else {
             response.sendRedirect("login.jsp?msg=Efetue o login!");
         }
       out.write("\n");
